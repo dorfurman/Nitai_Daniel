@@ -19,6 +19,7 @@ $shadowTxtColor4: rgb(151, 151, 151);
 // Media Queries
 $rs-320px: "max-width: 20em";
 $rs-480px: "max-width: 30em";
+$rs-480px-min: "min-width: 30em";
 $rs-1210px: "max-width: 75.625em";
 $rs-1310px: "max-width: 81.875em";
 $rs-1410px: "max-width: 88.125em";
@@ -613,6 +614,15 @@ body {
 }
 
 // RESPONSIVE //
+
+@media ($rs-480px-min) {
+  .zoomInContainer {
+    & img {
+      width: auto !important;
+      height: 100%;
+    }
+  }
+}
 
 @media ($rs-480px) {
   .headerContainer {

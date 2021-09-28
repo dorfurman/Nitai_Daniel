@@ -695,6 +695,13 @@ body {
   padding-right: 20px;
 }
 
+@media (min-width: 30em) {
+  .zoomInContainer img {
+    width: auto !important;
+    height: 100%;
+  }
+}
+
 @media (max-width: 30em) {
   .headerContainer {
     padding-bottom: 0;
